@@ -12,20 +12,19 @@ fetch('students.json')
             if (student) {
                 resultDiv.innerHTML = `
                     <h2>نتيجة الطالب</h2>
-                    <p>اسم الطالب: ${student.name}</p>
-                    <p>المرحلة: ${student.gradeLevel}</p>
-                    <p>المواد:</p>
-                    <ul>
-                        <li>عربي: ${student.arabic}</li>
-                        <li>علوم: ${student.science}</li>
-                        <li>حساب: ${student.math}</li>
-                        <li>إنجليزي: ${student.english}</li>
-                        <li>دراسات: ${student.social}</li>
-                    </ul>
+                    <table>
+                        <tr><th>الاسم</th><td>${student.name}</td></tr>
+                        <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
+                        <tr><th>عربي</th><td>${student.arabic}</td></tr>
+                        <tr><th>علوم</th><td>${student.science}</td></tr>
+                        <tr><th>حساب</th><td>${student.math}</td></tr>
+                        <tr><th>إنجليزي</th><td>${student.english}</td></tr>
+                        <tr><th>دراسات</th><td>${student.social}</td></tr>
+                    </table>
                     <button onclick="window.print()">طباعة النتيجة</button>
                 `;
             } else {
-                resultDiv.innerHTML = 'لم يتم العثور على نتيجة لهذا الرقم.';
+                resultDiv.innerHTML = '<p>لم يتم العثور على نتيجة لهذا الرقم.</p>';
             }
         });
     })

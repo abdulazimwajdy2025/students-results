@@ -1,21 +1,24 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+    background: url('school-background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .container {
     text-align: center;
-    background: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 600px;
 }
@@ -23,17 +26,17 @@ body {
 .logo {
     width: 100px;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 h1 {
     margin-bottom: 10px;
-    color: #333;
+    font-size: 24px;
 }
 
 p {
     margin: 5px 0;
     font-size: 14px;
-    color: #555;
 }
 
 input {
@@ -61,6 +64,25 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    font-size: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
     color: #333;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
 }
