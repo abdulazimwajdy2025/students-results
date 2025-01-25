@@ -8,7 +8,7 @@ fetch('students.json')
 
         searchButton.addEventListener('click', () => {
             const id = searchInput.value.trim();
-            const student = data.find(s => s.id === id);
+            const student = data.find(s => s.id == id);
             if (student) {
                 resultDiv.innerHTML = `
                     <h2>مبروك النجاح</h2>
