@@ -11,7 +11,7 @@ fetch('students.json')
             const student = data.find(s => s.id === id);
             if (student) {
                 resultDiv.innerHTML = `
-                    <h2>نتيجة الطالب</h2>
+                    <h2>مبروك النجاح</h2>
                     <table>
                         <tr><th>الاسم</th><td>${student.name}</td></tr>
                         <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
