@@ -15,6 +15,7 @@ fetch('students.json')
                         <tr><th>الاسم</th><td>${student.name}</td></tr>
                         <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
                         <tr><th>لغة عربية</th><td>${student.arabic}</td></tr>
+                        <tr><th>رياضيات</th><td>${student.math}</td></tr>
                         <tr><th>لغة انجليزية حكومي</th><td>${student.english || '--'}</td></tr>
                         <tr><th>دراسات</th><td>${student.social || '--'}</td></tr>
                         <tr><th>علوم</th><td>${student.scienc || '--'}</td></tr>
