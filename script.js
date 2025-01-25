@@ -21,7 +21,7 @@ fetch('students.json')
                         <tr><th>علوم</th><td>${student.scienc}</td></tr>
                         <tr><th>لغة انجليزية حكومي</th><td>${student.english}</td></tr>
                         <tr><th>المجــــــموع</th><td>${student.total}</td></tr>
-                        <tr><th>مستوى انجليزي<</th><td>${student.eng}</td></tr>
+                        <tr><th>مستوى انجليزي</th><td>${student.eng}</td></tr>
                         <tr><th>تربية دينية</th><td>${student.deen}</td></tr>
                         <tr><th>متعدد التخصصات</th><td>${student.dis}</td></tr>
                         <tr><th>توكاتسو</th><td>${student.tok}</td></tr>
