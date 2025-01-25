@@ -12,14 +12,14 @@ fetch('students.json')
                 resultDiv.innerHTML = `
                     <h2>مبروك النجاح</h2>
                     <table>
-                        <tr><th>الاسم</th><td>${student.name}</td></tr>
-                        <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
+                        <tr style="background-color: #FFD700;"><th>الاسم</th><td>${student.name}</td></tr>
+                        <tr style="background-color: #98FB98;"><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
                         <tr><th>لغة عربية</th><td>${student.arabic}</td></tr>
                         <tr><th>رياضيات</th><td>${student.math}</td></tr>
                         <tr><th>لغة انجليزية حكومي</th><td>${student.english || '--'}</td></tr>
                         <tr><th>دراسات</th><td>${student.social || '--'}</td></tr>
                         <tr><th>علوم</th><td>${student.scienc || '--'}</td></tr>
-                        <tr><th>المجــــــموع</th><td>${student.total || '--'}</td></tr>
+                        <tr style="background-color: #ADD8E6;"><th>المجــــــموع</th><td>${student.total || '--'}</td></tr>
                         <tr><th>مستوى انجليزي</th><td>${student.eng || '--'}</td></tr>
                         <tr><th>تربية دينية</th><td>${student.deen || '--'}</td></tr>
                         <tr><th>متعدد التخصصات</th><td>${student.dis || '--'}</td></tr>
