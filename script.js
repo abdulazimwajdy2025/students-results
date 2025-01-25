@@ -15,19 +15,19 @@ fetch('students.json')
                         <tr><th>الاسم</th><td>${student.name}</td></tr>
                         <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
                         <tr><th>لغة عربية</th><td>${student.arabic}</td></tr>
-        <tr><th>دراسات</th><td>${student.social || 'غير متوفر'}</td></tr>
-        <tr><th>علوم</th><td>${student.scienc || 'غير متوفر'}</td></tr>
-        <tr><th>لغة انجليزية حكومي</th><td>${student.english || 'غير متوفر'}</td></tr>
-        <tr><th>المجــــــموع</th><td>${student.total || 'غير متوفر'}</td></tr>
-        <tr><th>مستوى انجليزي</th><td>${student.eng || 'غير متوفر'}</td></tr>
-        <tr><th>تربية دينية</th><td>${student.deen || 'غير متوفر'}</td></tr>
-        <tr><th>متعدد التخصصات</th><td>${student.dis || 'غير متوفر'}</td></tr>
-        <tr><th>توكاتسو</th><td>${student.tok || 'غير متوفر'}</td></tr>
-        <tr><th>تربية بدنية</th><td>${student.pe || 'غير متوفر'}</td></tr>
-        <tr><th>كمبيوتر</th><td>${student.ict || 'غير متوفر'}</td></tr>
-        <tr><th>مهارات</th><td>${student.scal || 'غير متوفر'}</td></tr>
-        <tr><th>تربية فنية</th><td>${student.art || 'غير متوفر'}</td></tr>
-        <tr><th>تربية موسيقيه</th><td>${student.mu || 'غير متوفر'}</td></tr>
+        <tr><th>دراسات</th><td>${student.social || '--'}</td></tr>
+        <tr><th>علوم</th><td>${student.scienc || '--'}</td></tr>
+        <tr><th>لغة انجليزية حكومي</th><td>${student.english || '--'}</td></tr>
+        <tr><th>المجــــــموع</th><td>${student.total || '--'}</td></tr>
+        <tr><th>مستوى انجليزي</th><td>${student.eng || '--'}</td></tr>
+        <tr><th>تربية دينية</th><td>${student.deen || '--'}</td></tr>
+        <tr><th>متعدد التخصصات</th><td>${student.dis || '--'}</td></tr>
+        <tr><th>توكاتسو</th><td>${student.tok || '--'}</td></tr>
+        <tr><th>تربية بدنية</th><td>${student.pe || '--'}</td></tr>
+        <tr><th>كمبيوتر</th><td>${student.ict || '--'}</td></tr>
+        <tr><th>مهارات</th><td>${student.scal || '--'}</td></tr>
+        <tr><th>تربية فنية</th><td>${student.art || '--'}</td></tr>
+        <tr><th>تربية موسيقيه</th><td>${student.mu || '--'}</td></tr>
                     </table>
                     <button onclick="window.print()">طباعة النتيجة</button>
                 `;
