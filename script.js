@@ -16,20 +16,20 @@ fetch('students.json')
                         <tr><th>الاسم</th><td>${student.name}</td></tr>
                         <tr><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
                         <tr><th>لغة عربية</th><td>${student.arabic}</td></tr>
-                        <tr><th>رياضيات</th><td>${student.science}</td></tr>
+                        <tr><th>رياضيات</th><td>${student.math}</td></tr>
                         <tr><th>دراسات</th><td>${student.social}</td></tr>
-                        <tr><th>علوم</th><td>${student.social}</td></tr>
-                        <tr><th>لغة انجليزية حكومي</th><td>${student.math}</td></tr>
-                        <tr><th>المجــــــموع</th><td>${student.social}</td></tr>
-                        <tr><th>مستوى انجليزي<</th><td>${student.english}</td></tr>
-                        <tr><th>تربية دينية</th><td>${student.social}</td></tr>
-                        <tr><th>متعدد التخصصات</th><td>${student.social}</td></tr>
-                        <tr><th>توكاتسو</th><td>${student.social}</td></tr>
-                        <tr><th>تربية بدنية</th><td>${student.social}</td></tr>
-                        <tr><th>كمبيوتر</th><td>${student.social}</td></tr>
-                        <tr><th>مهارات</th><td>${student.social}</td></tr>
-                        <tr><th>تربية فنية</th><td>${student.social}</td></tr>
-                        <tr><th>تربية موسيقيه</th><td>${student.social}</td></tr>
+                        <tr><th>علوم</th><td>${student.scienc}</td></tr>
+                        <tr><th>لغة انجليزية حكومي</th><td>${student.english}</td></tr>
+                        <tr><th>المجــــــموع</th><td>${student.total}</td></tr>
+                        <tr><th>مستوى انجليزي<</th><td>${student.eng}</td></tr>
+                        <tr><th>تربية دينية</th><td>${student.deen}</td></tr>
+                        <tr><th>متعدد التخصصات</th><td>${student.dis}</td></tr>
+                        <tr><th>توكاتسو</th><td>${student.tok}</td></tr>
+                        <tr><th>تربية بدنية</th><td>${student.pe}</td></tr>
+                        <tr><th>كمبيوتر</th><td>${student.ict}</td></tr>
+                        <tr><th>مهارات</th><td>${student.scal}</td></tr>
+                        <tr><th>تربية فنية</th><td>${student.art}</td></tr>
+                        <tr><th>تربية موسيقيه</th><td>${student.mu}</td></tr>
                     </table>
                     <button onclick="window.print()">طباعة النتيجة</button>
                 `;
