@@ -34,7 +34,7 @@ fetch('students.json')
                     <button onclick="window.print()">طباعة النتيجة</button>
                 `;
             } else {
-                resultDiv.innerHTML = '<p>لم يتم العثور على نتيجة لهذا الرقم.</p>';
+                resultDiv.innerHTML = '<p>لم يتم العثور على نتيجة لهذا الرقم او قد تكون النتيجة محجوبة راجع ادارة المدرسة.</p>';
             }
         });
     })
