@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Arial', sans-serif;
     background: url('school-background.jpg') no-repeat center center fixed;
@@ -24,7 +23,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 150px; /* تكبير الشعار */
     margin-bottom: 20px;
     border-radius: 50%;
 }
@@ -32,6 +31,13 @@ body {
 h1 {
     margin-bottom: 10px;
     font-size: 24px;
+}
+
+.director {
+    font-size: 1.2rem;
+    color: #FF5722; /* لون زاهي */
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 p {
