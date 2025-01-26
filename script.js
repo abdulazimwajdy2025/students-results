@@ -8,7 +8,19 @@ fetch('students.json')
         searchButton.addEventListener('click', () => {
             const id = Number(searchInput.value.trim()); // تحويل الرقم إلى Number
             const student = data.find(s => s.id === id); // البحث باستخدام ===
+            
             if (student) {
+                // تحديد المجموع والمواد حسب المرحلة الدراسية
+                let additionalSubjects = ''; 
+                let totalMax = student.gradeLevel === "primary 3" ? 300 : 500;
+
+                if (student.gradeLevel !== "primary 3") {
+                    additionalSubjects = `
+                        <tr><th>(100)دراسات</th><td>${student.social || '--'}</td></tr>
+                        <tr><th>(100)علوم</th><td>${student.scienc || '--'}</td></tr>
+                    `;
+                }
+
                 resultDiv.innerHTML = `
                     <h2>مبروك النجاح</h2>
                     <table>
@@ -17,9 +29,8 @@ fetch('students.json')
                         <tr><th>(100)لغة عربية</th><td>${student.arabic}</td></tr>
                         <tr><th>(100)رياضيات</th><td>${student.math}</td></tr>
                         <tr><th>(100)لغة انجليزية حكومي</th><td>${student.english || '--'}</td></tr>
-                        <tr><th>(100)دراسات</th><td>${student.social || '--'}</td></tr>
-                        <tr><th>(100)علوم</th><td>${student.scienc || '--'}</td></tr>
-                        <tr style="background-color: #ADD8E6;"><th>المجــــــموع</th><td>${student.total || '--'}</td></tr>
+                        ${additionalSubjects}
+                        <tr style="background-color: #ADD8E6;"><th>المجــــــموع (${totalMax})</th><td>${student.total || '--'}</td></tr>
                         <tr><th>(100)مستوى انجليزي</th><td>${student.eng || '--'}</td></tr>
                         <tr><th>(100)تربية دينية</th><td>${student.deen || '--'}</td></tr>
                         <tr><th>(100)متعدد التخصصات</th><td>${student.dis || '--'}</td></tr>
