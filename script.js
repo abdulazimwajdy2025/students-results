@@ -63,7 +63,7 @@ fetch('students.json')
                         <tr style="background-color: #FFD700;"><th>الاسم</th><td>${student.name}</td></tr>
                         <tr style="background-color: #98FB98;"><th>المرحلة</th><td>${student.gradeLevel}</td></tr>
                         ${insideTotalHtml}
-                        <tr style="background-color: #ADD8E6;"><th>المجــــــموع</th><td>${student.total} / ${maxTotal}</td></tr>
+                        <!--<tr style="background-color: #ADD8E6;"><th>المجــــــموع</th><td>${student.total} / ${maxTotal}</td></tr>-->
                         ${outsideTotalHtml}
                     </table>
                     <button onclick="window.print()">طباعة النتيجة</button>
